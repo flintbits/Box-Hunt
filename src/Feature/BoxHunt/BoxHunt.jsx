@@ -19,7 +19,7 @@ export default function BoxHunt() {
   const MouseClickRef = useRef(1);
 
   //Start of the game
-    const handleStart = () => 
+  const handleStart = () => {
     clearTimeout(timerRef.current);
     setGameState("waiting");
     if (!userTime) {
